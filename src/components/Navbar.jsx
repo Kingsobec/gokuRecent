@@ -8,7 +8,7 @@ const Navbar = () => {
         <a href="" className='trans hover:underline'>book with us <i className="fa-regular fa-circle-right ml-2 text-[1.2em]"></i></a>
       </p>
 
-      <div className="bg-[#fef6f5] flex justify-between items-center pl-8 h-[70px] pr-4 md:pr-0">
+      <div className="bg-[#fef6f5] flex justify-between items-center md:pl-8 pl-[1rem] h-[70px] pr-4 md:pr-0">
         <img src={logo} alt="" className="w-[100px]" />
         <div className=" text-[#71192e] flex">
           <button className=' p-3 border-[1.5px] rounded-md  border-[#71192e] md:block hidden m-2'>EN</button>

@@ -74,3 +74,9 @@ body {
         #f68f78 50%,
         #f68f78 100%);
 }
+
+/*  */
+.image:hover{
+transform: scale(1.2);
+  transition: all .5s;
+}
