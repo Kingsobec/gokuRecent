@@ -5,6 +5,9 @@ import flex1 from "./flex1.jpg"
 import flex2 from "./flex2.jpg"
 import flex3 from "./flex3.jpg"
 import flex4 from "./flex4.jpg"
+import graph from './ill-graph.svg';
+import notes from './ill-notes.svg';
+import phone2 from './ill-phone2.svg';
 
 export {
   logo,
@@ -14,4 +17,7 @@ export {
   flex2,
   flex3,
   flex4,
+  graph,
+  notes,
+  phone2,
 }
