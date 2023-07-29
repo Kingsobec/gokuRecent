@@ -1,8 +1,17 @@
 import React from "react";
-import { flex1, flex2, flex3, flex4, graph, notes, phone2, video } from "../assets";
+import {
+  flex1,
+  flex2,
+  flex3,
+  flex4,
+  graph,
+  notes,
+  phone1,
+  phone2,
+  video,
+} from "../assets";
 
 const HomePage = () => {
-  
   const FirstPage = () => {
     return (
       <div className="home px-[1rem] md:px-[2rem] lg:px-[4rem] py-8 md:py-[4rem]">
@@ -23,11 +32,11 @@ const HomePage = () => {
           </div>
         </div>
         <div className="px-2 rounded-b-[10px] md:bg-white md:flex justify-between items-center flex-col md:flex-row">
-          <div className="p-1 md:p-2 mt-4 bg-white w-full rounded-[10px] mb-4">
+          <div className="p-2 md:p-2 mt-4 bg-white w-full rounded-[10px] mb-4 flex justify-between items-center">
             <i className="fa-solid fa-location-dot mr-2"></i>
             <input
               type="text"
-              className=" bg-transparent p-4"
+              className=" bg-transparent p-4 w-full"
               placeholder="Start typing address"
             />
           </div>
@@ -86,7 +95,7 @@ const HomePage = () => {
   };
   const FourthPage = () => {
     return (
-      <div className="px-[1rem] md:px-[2rem] lg:px-[4rem] py-8 md:py-[4rem] bg-[#f2f4e4] text-[#283755]">
+      <div className="px-[1rem] md:px-[2rem] lg:px-[8rem] py-8 md:py-[4rem] bg-[#f2f4e4] text-[#283755]">
         <div className="md:max-w-[65%] px-8 sm:px-0">
           <h2 className=" text-[1.8rem] md:text-[3rem] mb-4">
             Full property management services
@@ -223,14 +232,17 @@ const HomePage = () => {
       },
     ];
     return (
-      <div className="px-[1rem] md:px-[2rem] lg:px-[4rem] py-8 md:py-[4rem] bg-white">
+      <div className="px-[2rem] md:px-[2rem] lg:px-[8rem] py-8 md:py-[4rem] bg-white ">
         <h2 className="py-8 text-[2rem] font-bold text-[#283755]">
           Why choose GuestReady?{" "}
         </h2>
         <div className="flex justify-between gap-2 flex-col md:flex-row">
           {reasons.map((each, index) => {
             return (
-              <div className="w-full md:w-[32%] flex flex-col justify-between" key={index}>
+              <div
+                className="w-full md:w-[32%] flex flex-col justify-between"
+                key={index}
+              >
                 <div className="">
                   <img src={each.img} alt="" />
                   <p className="py-4 text-[1.2rem]">{each.head}</p>
@@ -250,8 +262,60 @@ const HomePage = () => {
     );
   };
   const SixthPage = () => {
-    
-    return <div className=""></div>;
+    return (
+      <div className="px-[1rem] md:px-[2rem] lg:px-[4rem] py-8 md:py-[4rem]">
+        <div className="flex justify-between flex-col md:flex-row gap-4 py-4">
+          <img src={phone1} alt="" className="w-full md:w-[40%]" />
+          <div className="">
+            <h2 className="text-[2rem]">Platform for property owners</h2>
+            <p className=" text-[1.2rem] py-4">
+              Access all information related to your property whenever you need
+              it through our mobile app. We take care of all the details while
+              providing full transparency of what’s happening and how much your
+              property is profiting.
+            </p>
+
+            <ul className=" list-disc ml-8">
+              <li>Dashboard with overview of all the bookings and guests</li>
+              <li>Stay on top of planned maintenance and cleaning missions</li>
+              <li>See reviews from the satisfied guests</li>
+              <li>Get a complete financial overview</li>
+              <li>Track the performance: income, occupancy and much more.</li>
+            </ul>
+          </div>
+        </div>
+        <p className="">Calculate your potential income</p>
+        <p className="">
+          Find out how much you can make with GuestReady as your Airbnb
+          Management Company
+        </p>
+        <div className="px-2 rounded-b-[10px] md:bg-white md:flex justify-between items-center flex-col md:flex-row">
+          <div className="p-2 md:p-2 mt-4 bg-white w-full rounded-[10px] mb-4 flex justify-between items-center">
+            <i className="fa-solid fa-location-dot mr-2"></i>
+            <input
+              type="text"
+              className=" bg-transparent p-4 w-full"
+              placeholder="Start typing address"
+            />
+          </div>
+          <div className="pl-4 text-[1.2rem] hover:text-[#f68f78] trans border-l-2 p-4 bg-white w-full rounded-[10px] mb-4">
+            <i className="fa-solid fa-bed mr-2"></i>
+            <select name="Bedroom" id="" className=" bg-transparent">
+              <option value="none">No. of bedrooms</option>
+              <option value="studio">studio</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5+">5+</option>
+            </select>
+          </div>
+          <p className="bg-[#4b6ccc] py-[1.4rem] rounded-[10px] text-center md:px-[1.6rem] text-white hover:bg-[#1f4ea1] trans hover:text-[1.05em] top-0 md:ml-5 cursor-pointer w-full">
+            Get Estimate
+          </p>
+        </div>
+      </div>
+    );
   };
   const SeventhPage = () => {
     return <div className=""></div>;

@@ -8,6 +8,7 @@ import flex4 from "./flex4.jpg"
 import graph from './ill-graph.svg';
 import notes from './ill-notes.svg';
 import phone2 from './ill-phone2.svg';
+import phone1 from "./phone-shape-en.png";
 
 export {
   logo,
@@ -20,4 +21,5 @@ export {
   graph,
   notes,
   phone2,
+  phone1,
 }
